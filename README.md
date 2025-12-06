@@ -8,6 +8,9 @@
 
 MedForm AI is a **comprehensive platform for structured medical data extraction**. It ingests clinical notes from **text, scanned forms, or voice recordings**, uses an LLM-powered extraction pipeline, optionally enhanced with OCR or speech-to-text models, and persists structured data in **Neo4j as a semantic knowledge graph**. A staff-facing **Streamlit console** allows review, approval, visualization, and management of patient records.
 
+* **Frontend Dashboard:**
+  ![Frontend Dashboard](https://github.com/suraj5424/Medicalform-multimodal-agent-fastapi-neo4j-streamlit/blob/main/Dashboard.png)
+
 ---
 
 ## 1. Project Overview
@@ -98,11 +101,11 @@ MedForm AI is a **comprehensive platform for structured medical data extraction*
 ## 5. Running Locally (Development)
 
 1. Clone the repository.
-2. Install dependencies for backend and frontend: `pip install -r backend/requirements.txt` and `pip install -r frontend/requirements.txt`.
-3. Ensure Tesseract and ffmpeg are installed and properly configured.
+2. Install dependencies for backend and frontend from the code files.
+3. Ensure Neo4j, Tesseract and ffmpeg are installed and properly configured.
 4. Start the backend: `uvicorn main:app --reload --host 0.0.0.0 --port 8000`.
 5. Start the frontend: navigate to `frontend` folder → `streamlit run app.py`.
-6. Set **API URL** in the Streamlit sidebar (default: `http://localhost:8000`).
+6. Set **API URL** in the Streamlit sidebar (default: `http://localhost:8501`).
 
 You should now have access to the full extraction, review, graph visualization, and record management functionality.
 
@@ -155,11 +158,8 @@ You should now have access to the full extraction, review, graph visualization, 
 ---
 
 ## 10. Images & Screenshots 🖼️
-
-Place screenshots in the `images/` folder:
-
-* **Frontend Dashboard:** `dashboard.png`
-* **Patient Knowledge Graph (matplotlib/NetworkX):** `patient_graph.png`
+* **Patient Knowledge Graph (matplotlib/NetworkX):**
+![Patient Knowledge Graph ](https://github.com/suraj5424/Medicalform-multimodal-agent-fastapi-neo4j-streamlit/blob/main/image.png)
 
 Tip: decode base64 output from `/graph/patient/{pid}/image` and save as PNG for visualization.
 
