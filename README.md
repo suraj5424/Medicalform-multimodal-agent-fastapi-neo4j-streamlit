@@ -165,8 +165,6 @@ Tip: decode base64 output from `/graph/patient/{pid}/image` and save as PNG for 
 
 ---
 
----
-
-## 12. License
+## 11. License
 
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.
