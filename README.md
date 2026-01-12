@@ -165,14 +165,6 @@ Tip: decode base64 output from `/graph/patient/{pid}/image` and save as PNG for 
 
 ---
 
-## 11. Contributing & Next Steps 🚀
-
-* Add **unit tests** for parsing, normalization, and graph insertion.
-* Improve LLM prompts or expand **medical mapping rules** to cover more symptoms and conditions.
-* Harden production deployment with authentication, HTTPS, and audit logging.
-* Add a **CI pipeline**: linting, type checking, tests.
-* Extend schema for additional medical metadata, structured vitals, demographics, or event history.
-
 ---
 
 ## 12. License
